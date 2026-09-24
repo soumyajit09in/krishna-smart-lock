@@ -355,13 +355,12 @@
   const logList = document.getElementById('logList');
   const spotlight = document.getElementById('spotlight');
 
-  // Your API URL
-  const APPS_SCRIPT_API = "https://script.google.com/macros/s/AKfycbxfhuZcbCaPGfQ2LFRNVGWujoZcpB_LizeIWaOiHsi_zgcyjXCeDSFeAlYPjz_vzxbP/exec";
-
+ 
+  const APPS_SCRIPT_API = "https://script.google.com/macros/s/AKfycbzx1xdGbiclZHsdI_DOjj-OePJM8OsekEZBVBG1lC_HDfr9pqRzx0fTfzT8dkLQe_F0/exec";
   let faceMatcher = null;
   const MODEL_URL = 'https://cdn.jsdelivr.net/gh/justadudewhohacks/face-api.js@master/weights/';
 
-  // ---------- cursor spotlight (desktop feel) ----------
+ 
   window.addEventListener('pointermove', (e) => {
     spotlight.style.setProperty('--mx', e.clientX + 'px');
     spotlight.style.setProperty('--my', e.clientY + 'px');
